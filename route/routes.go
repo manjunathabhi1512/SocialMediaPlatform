@@ -6,7 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func InitRouter(controller *controller.SocialMediaController) *gin.Engine{
+func InitRouter(controller *controller.SocialMediaController) *gin.Engine {
 	r := gin.Default()
 	r.POST("/create", controller.CreatePostController)
 	r.POST("/:id/addComment", controller.AddCommentController)
